@@ -1,0 +1,13 @@
+name: legal-check
+on: [push, pull_request]
+jobs:
+  grep-legal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: bash syntax
+        run: bash -n scripts/*.sh
+      - name: legal grep (hexlic/license/crack)
+        run: |
+          chmod +x scripts/check-legal.sh
+          ./scripts/check-legal.sh

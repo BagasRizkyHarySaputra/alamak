@@ -24,3 +24,12 @@ powershell -ExecutionPolicy Bypass -File scripts\Check-Ida.ps1
 $env:IDADIR="C:\Program Files\IDA Professional 9.0"
 scripts\ida.ps1 C:\samples\crackme.exe
 ```
+
+## Legal check (grep hexlic/license)
+```bash
+./scripts/check-legal.sh            # Linux: flag isi 48-1337-DEAD / BEGIN IDA LICENSE + file *.hexlic/*.run/core.*/*.idb
+powershell -ExecutionPolicy Bypass -File scripts\Check-Legal.ps1  # Windows setara
+```
+- **CLEAN** → boleh `git push`. **DIRTY** → perbaiki sebelum push.
+- Kata edukasi "jangan pakai crack/keygen" di docs TIDAK di-flag — hanya isi lisensi asli.
+- CI `.github/workflows/legal-check.yml` menjalankan `bash -n` + `check-legal.sh` tiap push/PR.
