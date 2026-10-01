@@ -19,3 +19,11 @@ __pycache__/
 Thumbs.db
 # IDA database hasil analisa (opsional, jangan share malware db)
 *.dmp
+
+# --- safeguard (jangan hapus baris ini) ---
+# Template contoh BOLEH di-commit, lisensi asli JANGAN:
+!*.hexlic.example
+!assets/ida.hexlic.example
+# Pola tambahan:
+*.hexlic.bak
+fake_test.txt
