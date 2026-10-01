@@ -1,0 +1,21 @@
+# Jangan pernah commit file sensitif IDA!
+*.hexlic
+*.run
+*.exe.installer
+*.idb
+*.i64
+*.til
+core.*
+*.core
+*.bak
+*.bak2
+idapro*/
+ida-free*/
+ida64.int.local
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# IDA database hasil analisa (opsional, jangan share malware db)
+*.dmp
