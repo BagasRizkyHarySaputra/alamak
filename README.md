@@ -27,8 +27,13 @@ ida-tutorial-repo/
 │   ├── ida.ps1         # Windows PowerShell wrapper
 │   ├── check-ida.sh    # checker Linux
 │   ├── Check-Ida.ps1   # checker Windows
+│   ├── check-legal.sh / Check-Legal.ps1  # legal-check (grep 48-1337/lisensi)
+│   ├── setup-license.sh / Setup-License.ps1  # pasang .hexlic lokal (tidak di-commit)
+│   ├── sync-license.sh # sebar lisensi tim private via scp/SSH (tidak via git)
 │   └── README.md       # cara pakai scripts
 └── docs/
+    ├── QUICKSTART-3-SCENARIO-ID.md  # ★ mulai di sini: nol / Free→Pro / Pro-tanpa-lisensi
+    ├── PRIVATE-SETUP.md  # tim internal: sebar lisensi via SSH tanpa masuk git
     ├── INSTALL-LINUX-ID.md
     ├── INSTALL-WINDOWS-ID.md
     ├── INSTALL-MCP-ID.md
@@ -56,6 +61,9 @@ scripts\ida.ps1 C:\samples\crackme.exe
 ```
 
 Detail penuh: [docs/INSTALL-LINUX-ID.md](docs/INSTALL-LINUX-ID.md) · [docs/INSTALL-WINDOWS-ID.md](docs/INSTALL-WINDOWS-ID.md) · [docs/INSTALL-MCP-ID.md](docs/INSTALL-MCP-ID.md)
+
+> Bingung mulai dari mana? → [docs/QUICKSTART-3-SCENARIO-ID.md](docs/QUICKSTART-3-SCENARIO-ID.md) (matriks: belum punya IDA / sudah ada Free / Pro belum ada lisensi).
+> Tim private? → [docs/PRIVATE-SETUP.md](docs/PRIVATE-SETUP.md) (`sync-license.sh` via SSH, lisensi tidak masuk git).
 
 ## Prasyarat
 

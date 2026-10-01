@@ -24,14 +24,18 @@ Repo ini membedah setup itu jadi tutorial yang bisa dipakai orang lain di Window
 - Tutorial install Linux, Windows, MCP, troubleshooting, dan audit mesin Kali (`docs/`)
 
 ## Alur 10 menit
-1. Baca [docs/ANALISIS-SETUP-KALI.md](docs/ANALISIS-SETUP-KALI.md) — paham acuan.
-2. Linux → [docs/INSTALL-LINUX-ID.md](docs/INSTALL-LINUX-ID.md). Windows → [docs/INSTALL-WINDOWS-ID.md](docs/INSTALL-WINDOWS-ID.md).
-3. Pasang AI bridge → [docs/INSTALL-MCP-ID.md](docs/INSTALL-MCP-ID.md).
-4. Error? → [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
+1. **Mulai di sini** → [docs/QUICKSTART-3-SCENARIO-ID.md](docs/QUICKSTART-3-SCENARIO-ID.md) — pilih skenariomu: (A) belum punya IDA, (B) sudah ada Free mau pasang Pro, (C) Pro sudah ada tapi lisensi belum dipasang.
+2. Baca [docs/ANALISIS-SETUP-KALI.md](docs/ANALISIS-SETUP-KALI.md) — paham acuan.
+3. Linux → [docs/INSTALL-LINUX-ID.md](docs/INSTALL-LINUX-ID.md). Windows → [docs/INSTALL-WINDOWS-ID.md](docs/INSTALL-WINDOWS-ID.md).
+4. Pasang AI bridge → [docs/INSTALL-MCP-ID.md](docs/INSTALL-MCP-ID.md).
+5. Error? → [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
+6. Tim private (sebar lisensi via SSH, tanpa masuk git) → [docs/PRIVATE-SETUP.md](docs/PRIVATE-SETUP.md).
 
 ## Dokumen lengkap
 | File | Isi |
 |---|---|
+| `docs/QUICKSTART-3-SCENARIO-ID.md` | ★ Matriks 3 skenario: nol IDA / Free→Pro / Pro-tanpa-lisensi + perintah persisnya |
+| `docs/PRIVATE-SETUP.md` | Tim internal: `sync-license.sh push/pull` via SSH, lisensi tidak masuk git |
 | `docs/INSTALL-LINUX-ID.md` | Install IDA Free/Pro di Kali/Ubuntu, `idapyswitch`, wrapper `~/.local/bin/ida`, Xvfb |
 | `docs/INSTALL-WINDOWS-ID.md` | Install `.exe`, PATH, `ida.bat`/`ida.ps1`, VC Redist, ExecutionPolicy |
 | `docs/INSTALL-MCP-ID.md` | `ida-pro-mcp --install` (GUI) vs `idalib-mcp` headless + `py-activate-idalib.py` + config Claude/VSCode |
