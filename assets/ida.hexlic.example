@@ -1,0 +1,21 @@
+# CONTOH struktur ida.hexlic — JANGAN pakai isi ini untuk aktivasi!
+# File asli kamu didapat dari Hex-Rays (akun lisensi) atau IDA Free.
+# Cara pakai: copy file .hexlic ASLI milikmu ke folder IDA (lihat scripts/setup-license.sh).
+# File ini hanya penanda struktur agar tutorial full-setup tetap jelas tanpa bocor lisensi.
+{
+  "header": { "version": 1 },
+  "payload": {
+    "email": "NAMA-KAMU@example.com",
+    "licenses": [
+      {
+        "id": "XX-XXXX-XXXX-00",
+        "owner": "XX-XXXX-XXXX-29",
+        "code": "HEXX64",
+        "start_date": "YYYY-MM-DD HH:MM:SS",
+        "end_date": "YYYY-MM-DD HH:MM:SS",
+        "add_ons": []
+      }
+    ]
+  },
+  "_note": "Ganti dengan file asli dari Hex-Rays. File *.hexlic ASLI tidak boleh di-commit (lihat .gitignore)."
+}
