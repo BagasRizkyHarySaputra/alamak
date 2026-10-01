@@ -33,3 +33,9 @@ powershell -ExecutionPolicy Bypass -File scripts\Check-Legal.ps1  # Windows seta
 - **CLEAN** → boleh `git push`. **DIRTY** → perbaiki sebelum push.
 - Kata edukasi "jangan pakai crack/keygen" di docs TIDAK di-flag — hanya isi lisensi asli.
 - CI `.github/workflows/legal-check.yml` menjalankan `bash -n` + `check-legal.sh` tiap push/PR.
+
+## Matriks 3 skenario (mulai dari mana?)
+Lihat `docs/QUICKSTART-3-SCENARIO-ID.md`:
+- A. Nol IDA → install Free/Pro → `idapyswitch` → `check-ida.sh` → `ida.sh sample`
+- B. Free ada, Pro belum → install Pro folder beda → `idapyswitch` Pro → `setup-license.sh SRC` → ganti via `IDADIR=...`
+- C. Pro ada, license belum → `sync-license.sh pull` ATAU `setup-license.sh SRC` → `--check` + `check-legal.sh`
