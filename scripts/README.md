@@ -27,7 +27,7 @@ scripts\ida.ps1 C:\samples\crackme.exe
 
 ## Legal check (grep hexlic/license)
 ```bash
-./scripts/check-legal.sh            # Linux: flag isi 48-XXXX-DEAD (contoh ID lisensi) / BEGIN IDA LICENSE + file *.hexlic/*.run/core.*/*.idb
+./scripts/check-legal.sh            # Linux: flag isi 48-XXXX-DEAD (contoh ID lisensi) / BEGIN-IDA-LICENSE (contoh header lisensi, dispasi agar tidak ke-flag) + file *.hexlic/*.run/core.*/*.idb
 powershell -ExecutionPolicy Bypass -File scripts\Check-Legal.ps1  # Windows setara
 ```
 - **CLEAN** → boleh `git push`. **DIRTY** → perbaiki sebelum push.
